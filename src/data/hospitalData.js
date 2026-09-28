@@ -29,22 +29,22 @@ export const HOSPITAL_INFO = {
 export const HERO_SLIDES = [
   {
     id: 1,
-    imageSrc: '/src/assets/images/keh_hospital_building_1790604796889.jpg',
+    imageSrc: '/images/keh_hospital_building_1790604796889.jpg',
     altText: 'Kishoreganj Eye Hospital Modern Medical Facility in Latibabad'
   },
   {
     id: 2,
-    imageSrc: '/src/assets/images/keh_hospital_interior_1790604814075.jpg',
+    imageSrc: '/images/keh_hospital_interior_1790604814075.jpg',
     altText: 'Kishoreganj Eye Hospital Reception Lobby and Patient Care Center'
   },
   {
     id: 3,
-    imageSrc: '/src/assets/images/keh_operation_theatre_1790604827363.jpg',
+    imageSrc: '/images/keh_operation_theatre_1790604827363.jpg',
     altText: 'Advanced Ophthalmic Operating Theatre for Phacoemulsification'
   },
   {
     id: 4,
-    imageSrc: '/src/assets/images/keh_patient_group_1790604862214.jpg',
+    imageSrc: '/images/keh_patient_group_1790604862214.jpg',
     altText: 'Restored Vision - Post Operative Cataract Patient Community'
   }
 ];
@@ -209,7 +209,7 @@ export const GALLERY_ITEMS = [
     title: 'Post-Operative Cataract Recovery',
     category: 'patients',
     categoryLabel: 'Patient Care',
-    imageSrc: '/src/assets/images/keh_patient_group_1790604862214.jpg',
+    imageSrc: '/images/keh_patient_group_1790604862214.jpg',
     caption: 'Elderly rural patients smiling after successful cataract restoration at Kishoreganj Eye Hospital. Over 50,000 lives have had their vision restored.',
     date: '2026',
     location: 'KEH Courtyard, Latibabad'
@@ -219,7 +219,7 @@ export const GALLERY_ITEMS = [
     title: 'Rural Community Eye Screening',
     category: 'community',
     categoryLabel: 'Community Camps',
-    imageSrc: '/src/assets/images/keh_community_screening_1790604876848.jpg',
+    imageSrc: '/images/keh_community_screening_1790604876848.jpg',
     caption: 'Outreach mobile eye camp in a rural village: an elderly gentleman with traditional prayer cap receives a detailed eye exam and vision counseling.',
     date: '2026',
     location: 'Outreach Camp, Pakundia'
@@ -229,7 +229,7 @@ export const GALLERY_ITEMS = [
     title: 'Modern Hospital Architecture',
     category: 'hospital',
     categoryLabel: 'Hospital & OT',
-    imageSrc: '/src/assets/images/keh_hospital_building_1790604796889.jpg',
+    imageSrc: '/images/keh_hospital_building_1790604796889.jpg',
     caption: 'Main multi-story hospital complex at Latibabad, providing secondary ophthalmic services to Kishoreganj and adjacent districts.',
     date: '2026',
     location: 'Latibabad Campus'
@@ -239,7 +239,7 @@ export const GALLERY_ITEMS = [
     title: 'Precision Phaco Operating Theatre',
     category: 'hospital',
     categoryLabel: 'Hospital & OT',
-    imageSrc: '/src/assets/images/keh_operation_theatre_1790604827363.jpg',
+    imageSrc: '/images/keh_operation_theatre_1790604827363.jpg',
     caption: 'High-end surgical suite equipped with advanced ophthalmic microscopes and stitchless phacoemulsification systems.',
     date: '2026',
     location: 'Main Surgical OT Wing'
@@ -249,7 +249,7 @@ export const GALLERY_ITEMS = [
     title: 'Welcoming Reception & OPD Lobby',
     category: 'hospital',
     categoryLabel: 'Hospital & OT',
-    imageSrc: '/src/assets/images/keh_hospital_interior_1790604814075.jpg',
+    imageSrc: '/images/keh_hospital_interior_1790604814075.jpg',
     caption: 'Spacious patient reception and diagnostic waiting lounge designed for comfort, clear navigation, and prompt registration.',
     date: '2026',
     location: 'Ground Floor OPD'

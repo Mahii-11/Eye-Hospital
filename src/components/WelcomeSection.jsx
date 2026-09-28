@@ -28,7 +28,7 @@ export const WelcomeSection = ({ onOpenAppointment }) => {
                 {/* Image Container with precise rounded frame and shadow */}
                 <div className="relative aspect-square w-full rounded-xl overflow-hidden bg-slate-100 shadow-inner group">
                   <img
-                    src="/src/assets/images/keh_founder_profile_1790604845555.jpg"
+                    src="/images/keh_founder_profile_1790604845555.jpg"
                     alt="Mashuda Khatun Shefali, Founder Executive Director of NUK and Visionary of Kishoreganj Eye Hospital"
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-102"
