@@ -1,0 +1,6 @@
+{
+  "name": "Kishoreganj Eye Hospital",
+  "description": "Official portal for Kishoreganj Eye Hospital (KEH) - A specialized eye care center dedicated to preventing avoidable blindness with modern cataract surgery, phaco, OPD/IPD, and community outreach in Bangladesh.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
