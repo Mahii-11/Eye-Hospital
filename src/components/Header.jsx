@@ -121,7 +121,7 @@ export const Header = ({ onOpenAppointment, activeSection }) => {
               className="p-2 text-sky-700 bg-sky-50 rounded-lg border border-sky-200"
               aria-label="Call Hospital"
             >
-              <Phone className="w-5 h-5" />
+              <Phone className="w-4 h-4" />
             </a>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
