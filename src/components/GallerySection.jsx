@@ -2,11 +2,10 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { X, ZoomIn, MapPin, Calendar, Camera, Filter } from 'lucide-react';
 import { GALLERY_ITEMS } from '../data/hospitalData';
-import { GalleryItem } from '../types';
 
-export const GallerySection: React.FC = () => {
-  const [activeCategory, setActiveCategory] = useState<string>('all');
-  const [selectedPhoto, setSelectedPhoto] = useState<GalleryItem | null>(null);
+export const GallerySection = () => {
+  const [activeCategory, setActiveCategory] = useState('all');
+  const [selectedPhoto, setSelectedPhoto] = useState(null);
 
   const categories = [
     { id: 'all', label: 'All Photos' },
@@ -22,7 +21,7 @@ export const GallerySection: React.FC = () => {
   return (
     <section id="gallery" className="py-24 bg-slate-50/70 border-y border-slate-200/70">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
           <div>

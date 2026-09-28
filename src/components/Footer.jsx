@@ -2,7 +2,7 @@ import React from 'react';
 import { Eye, MapPin, Phone, Mail, Clock, ShieldCheck, Heart, ArrowUp } from 'lucide-react';
 import { HOSPITAL_INFO, SERVICES_LIST } from '../data/hospitalData';
 
-export const Footer: React.FC = () => {
+export const Footer = () => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -12,7 +12,7 @@ export const Footer: React.FC = () => {
       {/* Upper Main Footer: Three-Column Layout as requested */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-12">
-          
+
           {/* Column 1: Hospital Identity & Contact Details with modern icons */}
           <div className="lg:col-span-5 space-y-5">
             <div className="flex items-center gap-3">
@@ -121,7 +121,7 @@ export const Footer: React.FC = () => {
             <h4 className="text-sm font-bold uppercase tracking-wider text-white border-b border-slate-800 pb-2">
               Affiliations & Social Connect
             </h4>
-            
+
             <p className="text-xs text-slate-400 leading-relaxed">
               Kishoreganj Eye Hospital operates as a specialized healthcare organ of <strong className="text-white">Nari Uddug Kendra (NUK)</strong>, promoting health equity, women&apos;s empowerment, and community eye health in Bangladesh.
             </p>

@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { ChevronDown, HelpCircle, PhoneCall } from 'lucide-react';
 import { FAQS_LIST, HOSPITAL_INFO } from '../data/hospitalData';
 
-export const FaqSection: React.FC = () => {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
+export const FaqSection = () => {
+  const [openIndex, setOpenIndex] = useState(0);
 
-  const toggle = (idx: number) => {
+  const toggle = (idx) => {
     setOpenIndex(openIndex === idx ? null : idx);
   };
 

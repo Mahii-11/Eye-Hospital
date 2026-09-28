@@ -3,9 +3,9 @@ import { motion, AnimatePresence } from 'motion/react';
 import { ChevronLeft, ChevronRight, Play, Pause } from 'lucide-react';
 import { HERO_SLIDES } from '../data/hospitalData';
 
-export const HeroSlider: React.FC = () => {
+export const HeroSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [direction, setDirection] = useState<number>(1);
+  const [direction, setDirection] = useState(1);
   const [isPaused, setIsPaused] = useState(false);
 
   const totalSlides = HERO_SLIDES.length;
@@ -20,7 +20,7 @@ export const HeroSlider: React.FC = () => {
     setCurrentIndex((prev) => (prev - 1 + totalSlides) % totalSlides);
   }, [totalSlides]);
 
-  const goToSlide = (index: number) => {
+  const goToSlide = (index) => {
     setDirection(index > currentIndex ? 1 : -1);
     setCurrentIndex(index);
   };
@@ -36,7 +36,7 @@ export const HeroSlider: React.FC = () => {
 
   // Framer motion variants for smooth slide transition
   const slideVariants = {
-    enter: (dir: number) => ({
+    enter: (dir) => ({
       x: dir > 0 ? '100%' : '-100%',
       opacity: 0,
       scale: 1.02
@@ -46,17 +46,17 @@ export const HeroSlider: React.FC = () => {
       opacity: 1,
       scale: 1,
       transition: {
-        x: { type: 'spring' as const, stiffness: 280, damping: 30 },
+        x: { type: 'spring', stiffness: 280, damping: 30 },
         opacity: { duration: 0.6 },
         scale: { duration: 0.8 }
       }
     },
-    exit: (dir: number) => ({
+    exit: (dir) => ({
       x: dir > 0 ? '-100%' : '100%',
       opacity: 0,
       scale: 0.98,
       transition: {
-        x: { type: 'spring' as const, stiffness: 280, damping: 30 },
+        x: { type: 'spring', stiffness: 280, damping: 30 },
         opacity: { duration: 0.5 }
       }
     })

@@ -15,18 +15,13 @@ import {
   ChevronRight
 } from 'lucide-react';
 import { SERVICES_LIST } from '../data/hospitalData';
-import { ServiceItem } from '../types';
 import { ServiceModal } from './ServiceModal';
 
-interface ServicesSectionProps {
-  onOpenAppointmentForService: (serviceId: string) => void;
-}
-
-export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenAppointmentForService }) => {
-  const [selectedService, setSelectedService] = useState<ServiceItem | null>(null);
+export const ServicesSection = ({ onOpenAppointmentForService }) => {
+  const [selectedService, setSelectedService] = useState(null);
 
   // Icon mapping for clean medical representation
-  const renderIcon = (iconName: string) => {
+  const renderIcon = (iconName) => {
     const iconClass = "w-6 h-6 sm:w-7 sm:h-7";
     switch (iconName) {
       case 'Stethoscope':
@@ -55,7 +50,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenAppointm
   return (
     <section id="services" className="py-24 bg-white relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto">
           <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-sky-700 bg-sky-50 px-3 py-1 rounded-full border border-sky-200 mb-3">

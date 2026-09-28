@@ -2,12 +2,7 @@ import React, { useState } from 'react';
 import { Phone, Calendar, Menu, X, Eye, Clock, MapPin, ShieldCheck } from 'lucide-react';
 import { HOSPITAL_INFO } from '../data/hospitalData';
 
-interface HeaderProps {
-  onOpenAppointment: () => void;
-  activeSection: string;
-}
-
-export const Header: React.FC<HeaderProps> = ({ onOpenAppointment, activeSection }) => {
+export const Header = ({ onOpenAppointment, activeSection }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
@@ -20,7 +15,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenAppointment, activeSection
     { label: 'Contact Us', href: '#contact' },
   ];
 
-  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+  const handleNavClick = (e, href) => {
     e.preventDefault();
     setMobileMenuOpen(false);
     const target = document.querySelector(href);
@@ -117,29 +112,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenAppointment, activeSection
             })}
           </nav>
 
-          {/* Call & CTA Buttons */}
-          <div className="hidden sm:flex items-center gap-3">
-            {/* Prominent Phone Button as specified in user request */}
-            <a
-              href="tel:01738301501"
-              className="inline-flex items-center gap-2 px-3.5 py-2.5 rounded-lg border border-sky-200 bg-sky-50/80 text-sky-800 text-sm font-bold hover:bg-sky-100 hover:border-sky-300 transition-all shadow-xs group"
-              title="Click to call Kishoreganj Eye Hospital"
-            >
-              <div className="w-6 h-6 rounded-full bg-sky-600 text-white flex items-center justify-center group-hover:scale-110 transition-transform">
-                <Phone className="w-3.5 h-3.5" />
-              </div>
-              <span className="tracking-wide">01738301501</span>
-            </a>
-
-            {/* Appointment CTA */}
-            <button
-              onClick={onOpenAppointment}
-              className="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-sky-700 text-white text-sm font-semibold hover:bg-sky-800 active:scale-98 transition-all shadow-sm shadow-sky-700/20 cursor-pointer"
-            >
-              <Calendar className="w-4 h-4" />
-              <span>Book Appointment</span>
-            </button>
-          </div>
+        
 
           {/* Mobile Menu Button */}
           <div className="flex sm:hidden items-center gap-2">

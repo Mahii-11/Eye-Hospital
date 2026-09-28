@@ -2,11 +2,7 @@ import React from 'react';
 import { Award, Users, Activity, HeartHandshake, PhoneCall } from 'lucide-react';
 import { HOSPITAL_STATS, HOSPITAL_INFO } from '../data/hospitalData';
 
-interface StatsBannerProps {
-  onOpenAppointment: () => void;
-}
-
-export const StatsBanner: React.FC<StatsBannerProps> = ({ onOpenAppointment }) => {
+export const StatsBanner = ({ onOpenAppointment }) => {
   const statIcons = [Award, Activity, Users, HeartHandshake];
 
   return (

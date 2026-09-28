@@ -21,8 +21,8 @@ import { HOSPITAL_INFO } from './data/hospitalData';
 
 export default function App() {
   const [isAppointmentOpen, setIsAppointmentOpen] = useState(false);
-  const [selectedServiceId, setSelectedServiceId] = useState<string | undefined>(undefined);
-  const [activeSection, setActiveSection] = useState<string>('home');
+  const [selectedServiceId, setSelectedServiceId] = useState(undefined);
+  const [activeSection, setActiveSection] = useState('home');
 
   // Active section spy on scroll
   useEffect(() => {
@@ -47,7 +47,7 @@ export default function App() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const handleOpenAppointment = (serviceId?: string) => {
+  const handleOpenAppointment = (serviceId) => {
     setSelectedServiceId(serviceId);
     setIsAppointmentOpen(true);
   };

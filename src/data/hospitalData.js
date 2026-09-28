@@ -1,5 +1,3 @@
-import { ServiceItem, GalleryItem, Doctor, NewsItem } from '../types';
-
 export const HOSPITAL_INFO = {
   name: 'Kishoreganj Eye Hospital',
   acronym: 'KEH',
@@ -58,7 +56,7 @@ export const HOSPITAL_STATS = [
   { label: 'Free Outreach Eye Camps', value: '450+', detail: 'Reaching haor & rural areas' }
 ];
 
-export const SERVICES_LIST: ServiceItem[] = [
+export const SERVICES_LIST = [
   {
     id: 'opd',
     name: 'OPD (Out-Patient Department)',
@@ -205,7 +203,7 @@ export const SERVICES_LIST: ServiceItem[] = [
   }
 ];
 
-export const GALLERY_ITEMS: GalleryItem[] = [
+export const GALLERY_ITEMS = [
   {
     id: 'gal-1',
     title: 'Post-Operative Cataract Recovery',
@@ -258,7 +256,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   }
 ];
 
-export const DOCTORS_LIST: Doctor[] = [
+export const DOCTORS_LIST = [
   {
     id: 'doc-1',
     name: 'Dr. Md. Rafiqul Islam',
@@ -297,7 +295,7 @@ export const DOCTORS_LIST: Doctor[] = [
   }
 ];
 
-export const NEWS_LIST: NewsItem[] = [
+export const NEWS_LIST = [
   {
     id: 'news-1',
     title: 'Free Mega Cataract Surgical Camp at Pakundia Upazila',

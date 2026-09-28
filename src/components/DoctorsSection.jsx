@@ -3,15 +3,11 @@ import { motion } from 'motion/react';
 import { UserCheck, Clock, MapPin, Award, Calendar, Stethoscope } from 'lucide-react';
 import { DOCTORS_LIST } from '../data/hospitalData';
 
-interface DoctorsSectionProps {
-  onOpenAppointment: () => void;
-}
-
-export const DoctorsSection: React.FC<DoctorsSectionProps> = ({ onOpenAppointment }) => {
+export const DoctorsSection = ({ onOpenAppointment }) => {
   return (
     <section id="doctors" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto">
           <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-sky-700 bg-sky-50 px-3 py-1 rounded-full border border-sky-200 mb-3">

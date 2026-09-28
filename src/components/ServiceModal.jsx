@@ -1,15 +1,8 @@
 import React from 'react';
 import { X, CheckCircle2, Clock, Calendar, ArrowRight, ShieldCheck, Phone } from 'lucide-react';
-import { ServiceItem } from '../types';
 import { HOSPITAL_INFO } from '../data/hospitalData';
 
-interface ServiceModalProps {
-  service: ServiceItem | null;
-  onClose: () => void;
-  onBookService: (serviceId: string) => void;
-}
-
-export const ServiceModal: React.FC<ServiceModalProps> = ({ service, onClose, onBookService }) => {
+export const ServiceModal = ({ service, onClose, onBookService }) => {
   if (!service) return null;
 
   return (

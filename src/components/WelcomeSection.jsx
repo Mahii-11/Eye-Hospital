@@ -3,18 +3,14 @@ import { motion } from 'motion/react';
 import { ShieldCheck, Heart, Award, ArrowRight, Eye, CheckCircle2 } from 'lucide-react';
 import { HOSPITAL_INFO } from '../data/hospitalData';
 
-interface WelcomeSectionProps {
-  onOpenAppointment: () => void;
-}
-
-export const WelcomeSection: React.FC<WelcomeSectionProps> = ({ onOpenAppointment }) => {
+export const WelcomeSection = ({ onOpenAppointment }) => {
   const [showFullHistory, setShowFullHistory] = useState(false);
 
   return (
     <section id="about" className="py-20 bg-slate-50/60 border-b border-slate-200/60">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-          
+
           {/* Left Column: Profile Photo of the woman in red saree in styled rounded frame */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}

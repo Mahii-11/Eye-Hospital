@@ -1,21 +1,14 @@
 import React, { useState } from 'react';
 import { X, Calendar, Clock, User, Phone, CheckCircle2, AlertCircle, Eye, ShieldCheck } from 'lucide-react';
 import { SERVICES_LIST, HOSPITAL_INFO, DOCTORS_LIST } from '../data/hospitalData';
-import { AppointmentFormData } from '../types';
 
-interface AppointmentModalProps {
-  isOpen: boolean;
-  onClose: () => void;
-  preselectedServiceId?: string;
-}
-
-export const AppointmentModal: React.FC<AppointmentModalProps> = ({
+export const AppointmentModal = ({
   isOpen,
   onClose,
   preselectedServiceId
 }) => {
   const [submitted, setSubmitted] = useState(false);
-  const [formData, setFormData] = useState<AppointmentFormData>({
+  const [formData, setFormData] = useState({
     patientName: '',
     phone: '',
     age: '',
@@ -29,7 +22,7 @@ export const AppointmentModal: React.FC<AppointmentModalProps> = ({
 
   if (!isOpen) return null;
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setSubmitted(true);
   };
